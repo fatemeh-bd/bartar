@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  transition-duration: 0.1s;
+  animation-duration: 0.1s;
+  font-family: var(--font-yakan);
+}
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --secondary100: #fafafa;
+  --secondary200: #f4f4f5;
+  --secondary700: #4b5563;
+  --primary: #1d4ed8;
+  --black: #09090b;
+  --border: #e4e4e7;
+  --backDrop: #f4f4f5cc;
+}
+
+.dark {
+  --background: #000;
+  --foreground: #ffffff;
+  --secondary100: #17171c;
+  --secondary200: #17171c;
+  --secondary700: #6b7280;
+  --black: #ffffff;
+  --border: #27272a;
+  --backDrop: #262626cc;
+}
+body {
+  direction: rtl;
+}
+
+.bg-background {
+  background-color: var(--background);
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .commentSwiper .swiper-button-next,
+  .commentSwiper .swiper-button-prev {
+    top: 70% !important;
+  }
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.swiper .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: transparent !important;
+}
+.commentShadow {
+  box-shadow: 0px 16px 23px -11px #10101017;
+}
+
+[type="radio"]:not(:checked) {
+  appearance: none !important;
+  border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .sortDropDown .label {
+    display: none !important;
+  }
+}
+.plyr__control--overlaid,
+.plyr__control:hover {
+  background-color: var(--primary) !important;
+}
+.plyr--full-ui input[type="range"] {
+  color: var(--primary) !important;
+}
+
+.whiteBack {
+  background-color: var(--background);
+  background: var(--background);
+}
