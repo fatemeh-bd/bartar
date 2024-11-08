@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import dynamic from "next/dynamic";
 import Tabs from "../../tabs/Tabs";
 import HeadlinesAccordions from "../../accordion/HeadlinesAccordions";
 import { TabType } from "../../tabs/types";
@@ -10,13 +11,14 @@ import {
   PencilIcon,
 } from "@heroicons/react/24/outline";
 import "plyr-react/plyr.css";
-import dynamic from "next/dynamic";
 
 const Plyr = dynamic(() => import("plyr-react"), { ssr: false });
+
 const tabs: TabType[] = [
   { id: 1, label: "توضیحات", icon: PencilIcon },
   { id: 3, label: "دیدگاه و پرسش", icon: ChatBubbleLeftRightIcon },
 ];
+
 const contents = [<EpisodeContent />, <Comments />];
 
 const Episode = () => {
@@ -33,6 +35,10 @@ const Episode = () => {
                 },
               ],
             }}
+            options={{
+              controls: ["play", "progress", "volume", "fullscreen"],
+              autoplay: false,
+            }}
           />
         </div>
         <Tabs tabs={tabs} content={contents} />
@@ -43,7 +49,7 @@ const Episode = () => {
           lists={[
             {
               id: 1,
-              title: " معرفی",
+              title: "معرفی",
               headLines: [
                 {
                   id: 1,
@@ -59,11 +65,11 @@ const Episode = () => {
             },
             {
               id: 2,
-              title: " پیاده سازی ساختار پروژه",
+              title: "پیاده سازی ساختار پروژه",
               headLines: [
                 {
                   id: 1,
-                  name: "چه زمانی از next و چه زمانی از react استفاده کنیم؟",
+                  name: "چه زمانی از Next و چه زمانی از React استفاده کنیم؟",
                   time: "۰۳:۵۸",
                 },
               ],
