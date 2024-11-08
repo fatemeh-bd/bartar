@@ -20,7 +20,7 @@ const BlogDetailPage = () => {
           alt="poster"
           src={"/images/react.jpg"}
         />
-        <GradientBox type="top">
+        <GradientBox type="top" className="space-y-3">
           <Title size={Sizes.xl}>دوره پروژه محور React و Next</Title>
           <Paragraph justify>
             ساخت وبسایت فروشگاهی با React عنوان دوره پروژه محور react در نابغه
