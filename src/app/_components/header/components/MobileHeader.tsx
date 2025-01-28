@@ -17,11 +17,11 @@ import Link from 'next/link';
 import Paragraph from '../../typography/Paragraph';
 import { ProfileItemType } from '../types';
 import { ColorType, ProfileItem, Sizes } from '@/_utiles/enums';
-import { useRouter } from 'next/router';
 
 const MobileHeader = () => {
   const [showProfileItem, setShowProfileItem] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -67,12 +67,11 @@ const MobileHeader = () => {
             setShowProfileItem(true);
           }}>
           <UserIcon className="size-9 bg-secondary-100 text-black rounded-full p-2" />
-          <ChevronDownIcon className="size-5" />
         </div>
       </FlexItemCenter>
       <div
         ref={menuRef}
-        className={`absolute left-0 top-6 opacity-1 transition-all group-hover/categories:opacity-100 group-hover/categories:visible pt-5 z-10 ${
+        className={`absolute left-3 top-6 opacity-1 transition-all group-hover/categories:opacity-100 group-hover/categories:visible pt-5 z-10 ${
           !showProfileItem ? ' invisible opacity-0' : ''
         }`}>
         <ul className="flex flex-col gap-2 p-4 relative w-56 [&>li>a]:!cursor-pointer rounded-xl max-h-[300px] bg-background border border-secondary-500 shadow-2xl shadow-black/5">
