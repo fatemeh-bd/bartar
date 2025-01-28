@@ -1,14 +1,14 @@
-import React from "react";
-import CommenstSlider from "./CommenstSlider";
-import TitleBox from "../TitleBox";
+import React from 'react';
+import CommenstSlider from './CommenstSlider';
+import TitleBox from '../TitleBox';
 
 const LandingComments = () => {
   return (
     <div className="md:grid md:grid-cols-12 md:gap-10 md:space-y-0 space-y-5 my-32 items-center">
       <div className="md:col-span-4 flex items-center gap-5">
         <TitleBox
-          title=" در مورد نابغه چه میشنویم؟"
-          description="   این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد نابغه
+          title=" در مورد میزکد چه میشنویم؟"
+          description="   این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد میزکد
           دارند."
         />
       </div>

@@ -1,8 +1,8 @@
-import Paragraph from "@/app/_components/typography/Paragraph";
-import SectionTitle from "@/app/_components/typography/SectionTitle";
-import Title from "@/app/_components/typography/Title";
-import Image from "next/image";
-import React from "react";
+import Paragraph from '@/app/_components/typography/Paragraph';
+import SectionTitle from '@/app/_components/typography/SectionTitle';
+import Title from '@/app/_components/typography/Title';
+import Image from 'next/image';
+import React from 'react';
 
 const Intro = () => {
   return (
@@ -23,7 +23,7 @@ const Intro = () => {
         width={600}
         height={400}
         alt="poster"
-        src={"/images/react.jpg"}
+        src={'/images/react.jpg'}
       />
       <Paragraph justify>
         زمانی که شما با موضوعات مختلف یک ابزار آشنایی پیدا کردید، یک نکته مهم که
@@ -35,7 +35,7 @@ const Intro = () => {
       </Paragraph>
       <Paragraph justify>
         منظور از غیر مستقیم بودن یادگیری مفاهیم اولیه این است که در برخی از
-        وبسایت‌های آموزشی از جمله وبسایت آموزشی نابغه ما دوره‌های مقدماتی را
+        وبسایت‌های آموزشی از جمله وبسایت آموزشی میزکد ما دوره‌های مقدماتی را
         پیشتر ضبط کرده و از شما انتظار داریم که ابتدا آن‌ها را به خوبی نگاه کرده
         و یاد گرفته باشید. به همین دلیل است که ما در پایان نوشته‌های مربوط به هر
         دوره یک قسمت اختصاصی به نام «پیش‌نیازها» را ایجاد کرده و در آنجا خواهیم

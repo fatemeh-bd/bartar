@@ -1,12 +1,12 @@
-import { ColorType, Sizes } from "@/_utiles/enums";
-import Teacher from "@/app/_components/courseBox/Teacher";
-import GradientBox from "@/app/_components/GradientBox";
-import Paragraph from "@/app/_components/typography/Paragraph";
-import SectionTitle from "@/app/_components/typography/SectionTitle";
-import Title from "@/app/_components/typography/Title";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { ColorType, Sizes } from '@/_utiles/enums';
+import Teacher from '@/app/_components/courseBox/Teacher';
+import GradientBox from '@/app/_components/GradientBox';
+import Paragraph from '@/app/_components/typography/Paragraph';
+import SectionTitle from '@/app/_components/typography/SectionTitle';
+import Title from '@/app/_components/typography/Title';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const BlogDetailPage = () => {
   return (
@@ -18,12 +18,12 @@ const BlogDetailPage = () => {
           height={400}
           loading="eager"
           alt="poster"
-          src={"/images/react.jpg"}
+          src={'/images/react.jpg'}
         />
         <GradientBox type="top" className="space-y-3">
           <Title size={Sizes.xl}>دوره پروژه محور React و Next</Title>
           <Paragraph justify>
-            ساخت وبسایت فروشگاهی با React عنوان دوره پروژه محور react در نابغه
+            ساخت وبسایت فروشگاهی با React عنوان دوره پروژه محور react در میزکد
             است که قصد داریم در قالب این دوره react را در قالب پروژه به شما
             آموزش دهیم.
           </Paragraph>
@@ -40,7 +40,7 @@ const BlogDetailPage = () => {
           </Paragraph>
           <Paragraph justify>
             منظور از غیر مستقیم بودن یادگیری مفاهیم اولیه این است که در برخی از
-            وبسایت‌های آموزشی از جمله وبسایت آموزشی نابغه ما دوره‌های مقدماتی را
+            وبسایت‌های آموزشی از جمله وبسایت آموزشی میزکد ما دوره‌های مقدماتی را
             پیشتر ضبط کرده و از شما انتظار داریم که ابتدا آن‌ها را به خوبی نگاه
             کرده و یاد گرفته باشید. به همین دلیل است که ما در پایان نوشته‌های
             مربوط به هر دوره یک قسمت اختصاصی به نام «پیش‌نیازها» را ایجاد کرده و
@@ -67,19 +67,22 @@ const BlogDetailPage = () => {
             <Paragraph
               size={Sizes.sm}
               type={ColorType.BLACK}
-              className="font-medium"
-            >
+              className="font-medium">
               جلال بهرامی راد
             </Paragraph>
           }
           desc={
-            <Link href={"/"} className="text-primary text-xs font-medium">
+            <Link href={'/'} className="text-primary text-xs font-medium">
               دیدن رزومه
             </Link>
           }
         />
-        <Paragraph size={Sizes.sm} className="bg-secondary-200 p-4 rounded-2xl rounded-tr-none mt-4">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+        <Paragraph
+          size={Sizes.sm}
+          className="bg-secondary-200 p-4 rounded-2xl rounded-tr-none mt-4">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است
         </Paragraph>
       </div>
     </div>

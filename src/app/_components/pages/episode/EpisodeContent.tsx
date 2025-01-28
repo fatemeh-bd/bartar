@@ -1,6 +1,6 @@
-import React from "react";
-import Paragraph from "../../typography/Paragraph";
-import Image from "next/image";
+import React from 'react';
+import Paragraph from '../../typography/Paragraph';
+import Image from 'next/image';
 
 const EpisodeContent = () => {
   return (
@@ -20,7 +20,7 @@ const EpisodeContent = () => {
         height={400}
         loading="eager"
         alt="poster"
-        src={"/images/react.jpg"}
+        src={'/images/react.jpg'}
       />
       <Paragraph justify>
         زمانی که شما با موضوعات مختلف یک ابزار آشنایی پیدا کردید، یک نکته مهم که
@@ -30,7 +30,7 @@ const EpisodeContent = () => {
         شما به صورت مستقیم یا غیر مستقیم با مفاهیم اولیه آشنا شده و سپس فرایند
         یادگیری موضوعات جدید را در خلال ایجاد پروژه شروع خواهید کرد. منظور از
         غیر مستقیم بودن یادگیری مفاهیم اولیه این است که در برخی از وبسایت‌های
-        آموزشی از جمله وبسایت آموزشی نابغه ما دوره‌های مقدماتی را پیشتر ضبط کرده
+        آموزشی از جمله وبسایت آموزشی میزکد ما دوره‌های مقدماتی را پیشتر ضبط کرده
         و از شما انتظار داریم که ابتدا آن‌ها را به خوبی نگاه کرده و یاد گرفته
         باشید. به همین دلیل است که ما در پایان نوشته‌های مربوط به هر دوره یک
         قسمت اختصاصی به نام «پیش‌نیازها» را ایجاد کرده و در آنجا خواهیم گفت که

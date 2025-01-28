@@ -1,7 +1,7 @@
-import React from "react";
-import GradientBox from "../../GradientBox";
-import TitleBox from "./TitleBox";
-import CourseBox2 from "../../courseBox/CourseBox2";
+import React from 'react';
+import GradientBox from '../../GradientBox';
+import TitleBox from './TitleBox';
+import CourseBox2 from '../../courseBox/CourseBox2';
 
 const InfoSection = () => {
   return (
@@ -9,7 +9,7 @@ const InfoSection = () => {
       <TitleBox
         className="lg:w-4/12 flex !items-start gap-5 lg:mb-0 mb-8"
         title=" از گوشه و اطراف دنیای برنامه‌نویسی"
-        description="نوشتن کار جالبیه که از هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در نابغه فضای رو به شکلی آماده کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس عضو نابغه قرار بدید"
+        description="نوشتن کار جالبیه که از هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در میزکد فضای رو به شکلی آماده کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس عضو میزکد قرار بدید"
       />
 
       <div className="lg:w-8/12 w-full lg:mx-auto">

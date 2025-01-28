@@ -1,11 +1,11 @@
-import { Sizes } from "@/_utiles/enums";
-import FlexBetween from "@/app/_components/flex/FlexBetween";
-import FlexCenter from "@/app/_components/flex/FlexCenter";
-import Paragraph from "@/app/_components/typography/Paragraph";
-import Title from "@/app/_components/typography/Title";
-import { FaceSmileIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-import React from "react";
+import { Sizes } from '@/_utiles/enums';
+import FlexBetween from '@/app/_components/flex/FlexBetween';
+import FlexCenter from '@/app/_components/flex/FlexCenter';
+import Paragraph from '@/app/_components/typography/Paragraph';
+import Title from '@/app/_components/typography/Title';
+import { FaceSmileIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import React from 'react';
 
 const AboutUsPage = () => {
   return (
@@ -14,11 +14,11 @@ const AboutUsPage = () => {
         <FaceSmileIcon className="size-12 text-yellow-400" />
 
         <div className="bg-gradient-to-r  space-y-1 from-yellow-300 w-fit to-transparent py-4 px-10 mx-auto">
-          <Title size={Sizes.xl}>داستان شکل گیری کد برتر</Title>
+          <Title size={Sizes.xl}>داستان شکل گیری میزکد</Title>
         </div>
-        <div className={"max-w-[550px]"}>
+        <div className={'max-w-[550px]'}>
           <div className="py-3 w-[200px] mx-auto flex items-center text-xs before:flex-1 before:border-t before:border-secondary-500 before:me-6 after:flex-1 after:border-t after:border-secondary-500 after:ms-6 ">
-            <span className={"size-2 bg-secondary-500 rounded-full"}></span>
+            <span className={'size-2 bg-secondary-500 rounded-full'}></span>
           </div>
           <Paragraph className=" text-center my-4">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
@@ -29,12 +29,12 @@ const AboutUsPage = () => {
             متخصصان را می طلبد، تا با
           </Paragraph>
         </div>
-        <Paragraph>از فعالیت های کد برتر برایتان بگوییم</Paragraph>
+        <Paragraph>از فعالیت های میزکد برایتان بگوییم</Paragraph>
         <Title className="!font-extrabold text-2xl">
           بخشی از فعالیت های تیم مله
         </Title>
         <div className="py-3 w-[200px] mx-auto flex items-center text-xs before:flex-1 before:border-t before:border-secondary-500 before:me-6 after:flex-1 after:border-t after:border-secondary-500 after:ms-6 ">
-          <span className={"size-2 bg-secondary-500 rounded-full"}></span>
+          <span className={'size-2 bg-secondary-500 rounded-full'}></span>
         </div>
       </FlexCenter>
 
@@ -59,7 +59,7 @@ const AboutUsPage = () => {
             </Paragraph>
           </div>
           <Image
-            src={"/images/avatar.jpeg"}
+            src={'/images/avatar.jpeg'}
             alt="image"
             width={300}
             height={300}
@@ -88,7 +88,7 @@ const AboutUsPage = () => {
             </Paragraph>
           </div>
           <Image
-            src={"/images/avatar.jpeg"}
+            src={'/images/avatar.jpeg'}
             alt="image"
             width={300}
             height={300}
