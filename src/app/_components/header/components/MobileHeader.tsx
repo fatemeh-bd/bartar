@@ -6,7 +6,6 @@ import {
   AcademicCapIcon,
   ArrowLeftStartOnRectangleIcon,
   Bars3Icon,
-  ChevronDownIcon,
   ShoppingCartIcon,
   SparklesIcon,
   UserIcon,
@@ -20,12 +19,20 @@ import { ColorType, ProfileItem, Sizes } from '@/_utiles/enums';
 
 const MobileHeader = () => {
   const [showProfileItem, setShowProfileItem] = useState<boolean>(false);
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setShowProfileItem(false);
+      }
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setShowMobileMenu(false);
       }
     };
 
@@ -34,6 +41,7 @@ const MobileHeader = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
   const profileList: ProfileItemType[] = [
     {
       text: 'مشاهده پروفایل',
@@ -50,7 +58,10 @@ const MobileHeader = () => {
   return (
     <FlexBetween className="md:hidden flex">
       <FlexItemCenter>
-        <Bars3Icon className="size-10 bg-secondary-100 text-black rounded-full p-2" />
+        <Bars3Icon
+          className="size-10 bg-secondary-100 text-black rounded-full p-2 cursor-pointer"
+          onClick={() => setShowMobileMenu(!showMobileMenu)}
+        />
         <Logo />
       </FlexItemCenter>
 
@@ -69,6 +80,47 @@ const MobileHeader = () => {
           <UserIcon className="size-9 bg-secondary-100 text-black rounded-full p-2" />
         </div>
       </FlexItemCenter>
+
+      {/* Mobile Menu */}
+      <div
+        ref={mobileMenuRef}
+        className={`fixed top-0 right-0 h-[100vh] w-64 bg-background border-l border-secondary-500 shadow-2xl shadow-black/5 transform transition-transform duration-300 ease-in-out ${
+          showMobileMenu ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+        <div className="flex w-full mt-4 justify-center items-center p-4">
+          <Logo />
+        </div>
+
+        <ul className="flex flex-col gap-2 p-4 relative [&>li>a]:!cursor-pointer rounded-xl max-h-[300px]">
+          {profileList?.map((item, index) => (
+            <li key={index} className="border-b border-secondary-500 pb-2">
+              <Link
+                href={item.path}
+                className=" w-full flex items-center relative transition-colors cursor-pointer  hover:[&>div>p]:!text-primary">
+                <FlexItemCenter className="w-full hover:!text-primary">
+                  <item.icon className="size-5" />
+                  <Paragraph
+                    size={Sizes.xs}
+                    type={ColorType.BLACK}
+                    className="font-medium">
+                    {item.text}
+                  </Paragraph>
+                </FlexItemCenter>
+              </Link>
+            </li>
+          ))}
+          <li
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => {}}>
+            <ArrowLeftStartOnRectangleIcon className="size-5 text-rose-500" />
+            <Paragraph type={ColorType.ERROR} className="font-medium !text-xs">
+              خروج از حساب
+            </Paragraph>
+          </li>
+        </ul>
+      </div>
+
+      {/* Profile Menu */}
       <div
         ref={menuRef}
         className={`absolute left-3 top-6 opacity-1 transition-all group-hover/categories:opacity-100 group-hover/categories:visible pt-5 z-10 ${
