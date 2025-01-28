@@ -106,22 +106,22 @@
 // };
 
 // export default CartContent;
-"use client";
+'use client';
 
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
-import GradientBox from "../../GradientBox";
-import FlexBetween from "../../flex/FlexBetween";
-import TitleBox from "../landing/TitleBox";
-import CourseData from "../../courseBox/CourseData";
-import Image from "next/image";
-import LineSplitter from "../../LineSplitter";
-import { TrashIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Modal from "../../Modal/Modal";
-import Paragraph from "../../typography/Paragraph";
-import { ColorType } from "@/_utiles/enums";
-import MainButton from "../../buttons/MainButton";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { CourseType } from "../landing/types";
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import GradientBox from '../../GradientBox';
+import FlexBetween from '../../flex/FlexBetween';
+import TitleBox from '../landing/TitleBox';
+import CourseData from '../../courseBox/CourseData';
+import Image from 'next/image';
+import LineSplitter from '../../LineSplitter';
+import { TrashIcon } from '@heroicons/react/24/outline';
+import Modal from '../../Modal/Modal';
+import Paragraph from '../../typography/Paragraph';
+import { ColorType } from '@/_utiles/enums';
+import MainButton from '../../buttons/MainButton';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { CourseType } from '../landing/types';
 
 const CartContent = ({
   cartData,
@@ -132,13 +132,12 @@ const CartContent = ({
 }) => {
   const [openSureModal, setOpenSureModal] = useState(false);
 
-
   const router = useRouter();
-  const searchParams = typeof window !== "undefined" ? useSearchParams() : null;
-  const pathname = typeof window !== "undefined" ? usePathname() : "";
+  const searchParams = typeof window !== 'undefined' ? useSearchParams() : null;
+  const pathname = typeof window !== 'undefined' ? usePathname() : '';
 
   const handleRemoveCourse = () => {
-    const id = searchParams?.get("id");
+    const id = searchParams?.get('id');
     if (id) {
       setCartData(cartData.filter((item) => item.id !== Number(id)));
       setOpenSureModal(false);
@@ -150,7 +149,10 @@ const CartContent = ({
     <div>
       <GradientBox className="!p-5">
         <FlexBetween>
-          <TitleBox title=" سبد خرید شما" description="۲ دوره به سبد اضافه کرده اید" />
+          <TitleBox
+            title=" سبد خرید شما"
+            description="۲ دوره به سبد اضافه کرده اید"
+          />
         </FlexBetween>
       </GradientBox>
       <div className="py-8">
@@ -165,7 +167,8 @@ const CartContent = ({
                   width={250}
                   height={190}
                 />
-                <XMarkIcon
+
+                <TrashIcon
                   onClick={() => {
                     setOpenSureModal(true);
                     router.push(`?id=${item.id}`);
@@ -173,8 +176,10 @@ const CartContent = ({
                   className="size-9 text-white absolute inset-x-0 -bottom-4 p-2 mx-auto flex items-center justify-center bg-rose-600 rounded-full shadow-2xl cursor-pointer pointer-events-auto"
                 />
               </div>
-              <GradientBox type="bottom" className="!p-0 w-full sm:col-span-8 col-span-12">
-                <CourseData theme={"white"} data={item} />
+              <GradientBox
+                type="bottom"
+                className="!p-0 w-full sm:col-span-8 col-span-12">
+                <CourseData theme={'white'} data={item} />
               </GradientBox>
             </div>
             {index !== cartData.length - 1 && <LineSplitter className="my-8" />}
@@ -187,8 +192,13 @@ const CartContent = ({
           آیا از حذف دوره از سبد اطمینان دارید؟
         </Paragraph>
         <LineSplitter className="my-4" />
-        <FlexBetween gap="gap-4" className="w-full [&>button]:w-full [&>button]:rounded-xl">
-          <MainButton themeType={ColorType.BLACK} outline onClick={() => setOpenSureModal(false)}>
+        <FlexBetween
+          gap="gap-4"
+          className="w-full [&>button]:w-full [&>button]:rounded-xl">
+          <MainButton
+            themeType={ColorType.BLACK}
+            outline
+            onClick={() => setOpenSureModal(false)}>
             لغو
           </MainButton>
           <MainButton themeType={ColorType.ERROR} onClick={handleRemoveCourse}>
