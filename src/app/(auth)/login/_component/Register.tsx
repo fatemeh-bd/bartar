@@ -1,45 +1,70 @@
+'use client';
 import { ColorType, Sizes } from '@/_utiles/enums';
-import { justEnterNumber } from '@/_utiles/helper';
 import MainButton from '@/app/_components/buttons/MainButton';
 import Input from '@/app/_components/inputs/Input';
 import Label from '@/app/_components/inputs/Label';
-import Paragraph from '@/app/_components/typography/Paragraph';
 import SectionTitle from '@/app/_components/typography/SectionTitle';
-import React, { Dispatch, SetStateAction, useState } from 'react';
+import Paragraph from '@/app/_components/typography/Paragraph';
+import { Dispatch, SetStateAction, useState } from 'react';
 
-const Login = ({ setOtp }: { setOtp: Dispatch<SetStateAction<string>> }) => {
-  const [phoneNumber, setPhoneNumber] = useState('');
+import { useMutation } from '@tanstack/react-query';
+import { POST_REGISTER } from '@/_utiles/apiManager';
+export default function ({
+  setOtp,
+}: {
+  setOtp: Dispatch<SetStateAction<string>>;
+}) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const sendOtpHandler = () => {
-    if (!phoneNumber) {
-      return setError('لطفا شماره تلفن خود را وارد کنید');
-    }
-    if (phoneNumber.length < 11) {
-      setError('شماره تلفن باید ۱۱ رقمی باشد');
+    if (!email) {
+      return setError('لطفا شماره ایمیل خود را وارد کنید');
     } else {
       setError('');
-      setOtp('otp');
     }
   };
+  //   const mutation = useMutation((data: any) => postMethod(POST_REGISTER, data), {
+  //     onSuccess: (data: any) => {
+  //       console.log('Data posted successfully:', data);
+  //       // Handle success
+  //     },
+  //     onError: (error: any) => {
+  //       console.error('Error posting data:', error);
+  //       // Handle error
+  //     },
+  //   });
+  //   const handleSubmit = () => {
+  //     const data = { email: email, password: password };
+  //     mutation.mutate(data);
+  //   };
+
   return (
     <>
-      <SectionTitle title="ورود یا ثبت نام" />
+      <SectionTitle title="ثبت نام" />
       <Paragraph size={Sizes.sm} type={ColorType.BLACK}>
-        درود درود درود 👋
+        تنها یک قدم با دنیای برنامه نویسی فاصله داری!{' '}
       </Paragraph>
-      <form className="space-y-3">
-        <Label>لطفا شماره موبایل یا ایمیل خود را وارد کنید</Label>
+      <form className="space-y-2">
+        <Label>شماره موبایل یا ایمیل</Label>
         <Input
           type="tel"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="!border border-secondary-500"
-          onInput={justEnterNumber}
         />
         <Paragraph type={ColorType.ERROR}>{error}</Paragraph>
-        <MainButton defaultIcon full onClick={sendOtpHandler}>
-          برو بریم
+        <Label>رمز عبور</Label>
+        <Input
+          type="tel"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="!border border-secondary-500"
+        />
+        <Paragraph type={ColorType.ERROR}>{error}</Paragraph>
+        <MainButton className="!mt-4" defaultIcon full onClick={sendOtpHandler}>
+          ثبت نام
         </MainButton>
         <button className="cursor-pointer w-full justify-center text-black flex gap-2 items-center bg-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-zinc-300 transition-all ease-in duration-200">
           <svg
@@ -64,13 +89,11 @@ const Login = ({ setOtp }: { setOtp: Dispatch<SetStateAction<string>> }) => {
       </form>
       <span
         onClick={() => {
-          setOtp('register');
+          setOtp('');
         }}
         className="text-center block !mt-2 mx-auto w-full text-[var(--primary)] cursor-pointer underline">
-        حساب کاربری نداری؟ ساخت حساب کاربری
+        حساب کاربری داری؟ ورود
       </span>
     </>
   );
-};
-
-export default Login;
+}
