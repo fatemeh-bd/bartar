@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "../_components/header/Header";
-import Footer from "../_components/footer/Footer";
+import React from 'react';
+import Header from '../../_components/header/Header';
+import Footer from '../../_components/footer/Footer';
 export default function UserLayout({
   children,
 }: {
