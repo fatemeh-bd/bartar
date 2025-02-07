@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import GradientBox from '../../_components/GradientBox';
 import FlexCenter from '@/app/_components/flex/FlexCenter';
 import { Logo } from '@/app/_components/header/components/Logo';
 import Paragraph from '@/app/_components/typography/Paragraph';
@@ -8,6 +7,7 @@ import { Sizes } from '@/_utiles/enums';
 import Otp from './_component/Otp';
 import Login from './_component/Login';
 import Register from './_component/Register';
+import GradientBox from '../_components/GradientBox';
 
 const LoginPage = () => {
   const [status, setStatus] = useState<string>('');
