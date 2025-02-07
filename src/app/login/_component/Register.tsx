@@ -7,8 +7,6 @@ import SectionTitle from '@/app/_components/typography/SectionTitle';
 import Paragraph from '@/app/_components/typography/Paragraph';
 import { Dispatch, SetStateAction, useState } from 'react';
 
-import { useMutation } from '@tanstack/react-query';
-import { POST_REGISTER } from '@/_utiles/apiManager';
 export default function ({
   setOtp,
 }: {
