@@ -11,4 +11,5 @@ export type ButtonProps = Omit<
   defaultIcon?: boolean;
   full?: boolean;
   outline?: boolean;
+  isLoading?:boolean
 };

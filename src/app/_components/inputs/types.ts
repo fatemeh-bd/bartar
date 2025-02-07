@@ -7,4 +7,5 @@ export type InputProps = Omit<
   className?: string;
   icon?: React.ReactNode;
   label?: string;
+  errorText?: string;
 };

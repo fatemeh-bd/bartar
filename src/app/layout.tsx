@@ -1,22 +1,23 @@
-import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import './globals.css';
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import "./globals.css";
+import QueryProvider from "./providers/QueryProvider";
 const yekanBakh = localFont({
   src: [
     {
-      path: './fonts/yekan/woff/YekanBakh-Regular.woff',
-      weight: '400',
-      style: 'normal',
+      path: "./fonts/yekan/woff/YekanBakh-Regular.woff",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: './fonts/yekan/woff/YekanBakh-Bold.woff',
-      weight: '500',
-      style: 'normal',
+      path: "./fonts/yekan/woff/YekanBakh-Bold.woff",
+      weight: "500",
+      style: "normal",
     },
     {
-      path: './fonts/yekan/woff/YekanBakh-ExtraBold.woff',
-      weight: '600',
-      style: 'normal',
+      path: "./fonts/yekan/woff/YekanBakh-ExtraBold.woff",
+      weight: "600",
+      style: "normal",
     },
     // {
     //   path: "/fonts/yekan/woff/YekanBakh-ExtraBlack.woff",
@@ -24,13 +25,13 @@ const yekanBakh = localFont({
     //   style: "normal",
     // },
   ],
-  variable: '--font-yakan',
-  display: 'swap',
+  variable: "--font-yakan",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'میزکد',
-  description: 'وب سایت میزکد',
+  title: "میزکد",
+  description: "وب سایت میزکد",
 };
 
 export default function layout({
@@ -41,8 +42,9 @@ export default function layout({
   return (
     <html lang="fa">
       <body
-        className={`${yekanBakh.variable} ${yekanBakh.variable} bg-background antialiased font-[family-name:var(--font-yakan)] `}>
-        {children}
+        className={`${yekanBakh.variable} ${yekanBakh.variable} bg-background antialiased font-[family-name:var(--font-yakan)] `}
+      >
+        <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { ButtonProps } from "./types";
 import { ColorType } from "@/utils/enums";
 import { ArrowUpLeftIcon } from "@heroicons/react/20/solid";
+import Loader from "../loaders/Loader";
 
 const MainButton: React.FC<ButtonProps> = ({
   children,
@@ -10,6 +11,7 @@ const MainButton: React.FC<ButtonProps> = ({
   defaultIcon,
   full,
   outline,
+  isLoading,
   ...props
 }) => {
   const buttonClass = `${
@@ -25,9 +27,15 @@ const MainButton: React.FC<ButtonProps> = ({
   } ${outline ? "!bg-transparent" : ""}`;
 
   return (
-    <button type="button" name="mainButton" className={buttonClass} {...props}>
-      {children}
-      {defaultIcon && <ArrowUpLeftIcon className="size-5" />}
+    <button name="mainButton" className={buttonClass} {...props}>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          {children}
+          {defaultIcon && <ArrowUpLeftIcon className="size-5" />}
+        </>
+      )}
     </button>
   );
 };

@@ -1,11 +1,13 @@
 import { forwardRef } from "react";
 import { InputProps } from "./types";
+import Paragraph from "../typography/Paragraph";
+import { ColorType } from "@/utils/enums";
 export const boxClass =
   "bg-secondary-200 p-3 rounded-xl text-sm text-foreground";
 export const inputClass =
   "form-input my-2  w-full !ring-0 !ring-offset-0  !border-0  ";
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className = "", label, icon, ...rest }, ref) => {
+  ({ className = "", label, icon, errorText, ...rest }, ref) => {
     const classList = `${inputClass} ${className} ${boxClass}`;
 
     return icon ? (
@@ -23,6 +25,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       <div>
         <label className="text-sm text-secondary-700">{label}</label>
         <input className={classList} {...rest} ref={ref} />
+        {errorText && <Paragraph type={ColorType.ERROR}>{errorText}</Paragraph>}
       </div>
     ) : (
       <input className={classList} {...rest} ref={ref} />
