@@ -6,7 +6,7 @@ import Label from '@/app/_components/inputs/Label';
 import SectionTitle from '@/app/_components/typography/SectionTitle';
 import Paragraph from '@/app/_components/typography/Paragraph';
 import { Dispatch, SetStateAction, useState } from 'react';
-
+// غلط کردم
 export default function ({
   setOtp,
 }: {
