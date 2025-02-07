@@ -1,8 +1,12 @@
+import { signIn } from "next-auth/react";
 import React from "react";
 
 const LoginGoogleButton = () => {
   return (
-    <button className="cursor-pointer w-full justify-center text-black flex gap-2 items-center bg-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-zinc-300 transition-all ease-in duration-200">
+    <button
+      onClick={() => signIn("google")}
+      className="cursor-pointer w-full justify-center text-black flex gap-2 items-center bg-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-zinc-300 transition-all ease-in duration-200"
+    >
       <svg
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"

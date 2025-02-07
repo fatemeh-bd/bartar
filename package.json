@@ -16,6 +16,7 @@
     "heroicons": "^2.1.5",
     "js-cookie": "^3.0.5",
     "next": "15.0.0",
+    "next-auth": "^4.24.11",
     "plyr-react": "^5.3.0",
     "prop-types": "^15.8.1",
     "react": "19.0.0-rc-65a56d0e-20241020",

@@ -11,6 +11,7 @@ import { useMutation } from "@tanstack/react-query";
 import { callApi } from "@/api/callApi";
 import { CONFIRM_EMAIL } from "@/api/endpoints/auth_endpoints";
 import LoginGoogleButton from "@/app/_components/buttons/LoginGoogleButton";
+// import { useSession } from "next-auth/react";
 
 const Login = ({ setOtp }: { setOtp: Dispatch<SetStateAction<string>> }) => {
   const {
@@ -22,6 +23,8 @@ const Login = ({ setOtp }: { setOtp: Dispatch<SetStateAction<string>> }) => {
     status: "error" | "success";
     msg: string;
   } | null>(null);
+  // const { data: session } = useSession();
+
   const { mutate, isPending } = useMutation({
     mutationFn: async (data: any) => callApi("POST", CONFIRM_EMAIL, data),
 

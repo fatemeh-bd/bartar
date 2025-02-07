@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import QueryProvider from "./providers/QueryProvider";
+import AuthProvider from "./providers/AuthProvider";
 const yekanBakh = localFont({
   src: [
     {
@@ -44,7 +45,9 @@ export default function layout({
       <body
         className={`${yekanBakh.variable} ${yekanBakh.variable} bg-background antialiased font-[family-name:var(--font-yakan)] `}
       >
-        <QueryProvider>{children}</QueryProvider>
+        <AuthProvider>
+          <QueryProvider>{children}</QueryProvider>
+        </AuthProvider>
       </body>
     </html>
   );
