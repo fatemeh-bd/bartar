@@ -2,7 +2,7 @@
 import React from 'react';
 import MobileHeader from './components/MobileHeader';
 import DesktopHeader from './components/DesktopHeader';
-import { startMobileSize } from '@/_utiles/enums';
+import { startMobileSize } from '@/utils/enums';
 import { NavItemType } from './types';
 import useScreenWidth from '@/app/_components/hooks/useScreenWidth';
 export const navItems: NavItemType[] = [

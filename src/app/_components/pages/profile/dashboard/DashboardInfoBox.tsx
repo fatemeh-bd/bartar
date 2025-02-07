@@ -1,4 +1,4 @@
-import { ColorType, Sizes, SvgType } from "@/_utiles/enums";
+import { ColorType, Sizes, SvgType } from "@/utils/enums";
 import FlexItemCenter from "@/app/_components/flex/FlexItemCenter";
 import Paragraph from "@/app/_components/typography/Paragraph";
 import React from "react";

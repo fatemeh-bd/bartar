@@ -2,10 +2,10 @@
 import React from 'react';
 import FlexItemCenter from '../flex/FlexItemCenter';
 import MainButton from '../buttons/MainButton';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 import FlexBetween from '../flex/FlexBetween';
-import { scrollToTop } from '@/_utiles/helper';
+import { scrollToTop } from '@/utils/helper';
 import { ClockIcon, PhoneIcon } from '@heroicons/react/20/solid';
 import Paragraph from '../typography/Paragraph';
 import FooterItem from './FooterItem';

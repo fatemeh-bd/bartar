@@ -1,4 +1,4 @@
-import { Sizes } from '@/_utiles/enums';
+import { Sizes } from '@/utils/enums';
 import FlexBetween from '@/app/_components/flex/FlexBetween';
 import FlexCenter from '@/app/_components/flex/FlexCenter';
 import Paragraph from '@/app/_components/typography/Paragraph';

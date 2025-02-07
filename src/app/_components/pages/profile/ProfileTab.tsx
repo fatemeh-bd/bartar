@@ -10,7 +10,7 @@ import {
   Squares2X2Icon,
 } from "@heroicons/react/24/outline";
 import Paragraph from "../../typography/Paragraph";
-import { ProfileItem, Sizes } from "@/_utiles/enums";
+import { ProfileItem, Sizes } from "@/utils/enums";
 import { useRouter, useSearchParams } from "next/navigation";
 const profileItemlist: ProfileItemType[] = [
   {

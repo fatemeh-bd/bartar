@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import { NavItemType } from './types';
 import FlexBetween from '@/app/_components/flex/FlexBetween';
 import Paragraph from '@/app/_components/typography/Paragraph';

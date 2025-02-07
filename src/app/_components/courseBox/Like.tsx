@@ -1,6 +1,6 @@
 import React from "react";
 import { HeartIcon } from "@heroicons/react/20/solid";
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import MainButton from "../buttons/MainButton";
 
 const Like = ({ className }: { className?: string }) => {

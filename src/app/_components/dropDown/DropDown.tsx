@@ -4,9 +4,9 @@ import Paragraph from "../typography/Paragraph";
 import FlexItemCenter from "../flex/FlexItemCenter";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { boxClass } from "../inputs/Input";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 import { DropDownType } from "./types";
-import useOutsideClick from "@/_utiles/useOutsideClick";
+import useOutsideClick from "@/utils/useOutsideClick";
 
 const DropDown = ({
   label,

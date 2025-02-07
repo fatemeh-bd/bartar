@@ -118,7 +118,7 @@ import LineSplitter from '../../LineSplitter';
 import { TrashIcon } from '@heroicons/react/24/outline';
 import Modal from '../../Modal/Modal';
 import Paragraph from '../../typography/Paragraph';
-import { ColorType } from '@/_utiles/enums';
+import { ColorType } from '@/utils/enums';
 import MainButton from '../../buttons/MainButton';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { CourseType } from '../landing/types';

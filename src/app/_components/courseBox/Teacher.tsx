@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import FlexItemCenter from "../flex/FlexItemCenter";
 import Paragraph from "../typography/Paragraph";
 

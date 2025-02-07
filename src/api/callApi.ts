@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
-import { BASE_URL } from './apiManager';
+export const BASE_URL = 'http://mizcode.com/api/v1';
+
 export const checkAuth = () => {
   const accessToken = Cookies.get('accessToken');
   if (!accessToken) {

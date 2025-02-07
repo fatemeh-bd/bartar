@@ -1,5 +1,5 @@
-import { ColorType, Sizes } from '@/_utiles/enums';
-import { justEnterNumber } from '@/_utiles/helper';
+import { ColorType, Sizes } from '@/utils/enums';
+import { justEnterNumber } from '@/utils/helper';
 import MainButton from '@/app/_components/buttons/MainButton';
 import Input from '@/app/_components/inputs/Input';
 import Label from '@/app/_components/inputs/Label';

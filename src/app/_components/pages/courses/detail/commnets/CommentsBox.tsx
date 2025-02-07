@@ -4,7 +4,7 @@ import FlexCenter from "@/app/_components/flex/FlexCenter";
 import FlexItemCenter from "@/app/_components/flex/FlexItemCenter";
 import { ArrowUturnRightIcon } from "@heroicons/react/20/solid";
 import Paragraph from "@/app/_components/typography/Paragraph";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import Like from "@/app/_components/courseBox/Like";
 import Teacher from "@/app/_components/courseBox/Teacher";
 

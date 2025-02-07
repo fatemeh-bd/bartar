@@ -1,6 +1,6 @@
 "use client";
 
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import CartContent from "@/app/_components/pages/cart/CartContent";
 import PaymentInfo from "@/app/_components/pages/cart/PaymentInfo";
 import LastCourses, {

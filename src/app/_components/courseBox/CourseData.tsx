@@ -4,7 +4,7 @@ import React from "react";
 import Title from "@/app/_components/typography/Title";
 import FlexItemCenter from "@/app/_components/flex/FlexItemCenter";
 import FlexCenter from "@/app/_components/flex/FlexCenter";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import { ClockIcon, Square2StackIcon } from "@heroicons/react/20/solid";
 import FlexBetween from "@/app/_components/flex/FlexBetween";
 import Paragraph from "@/app/_components/typography/Paragraph";

@@ -1,6 +1,6 @@
 import React from "react";
 import FlexItemCenter from "../flex/FlexItemCenter";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 
 const SectionTitle = ({ title, size }: { title: string; size?: Sizes.sm }) => {
   return (

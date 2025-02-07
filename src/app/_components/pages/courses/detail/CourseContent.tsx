@@ -1,4 +1,4 @@
-import { Sizes } from '@/_utiles/enums';
+import { Sizes } from '@/utils/enums';
 import Image from 'next/image';
 import React from 'react';
 import Title from '../../../typography/Title';

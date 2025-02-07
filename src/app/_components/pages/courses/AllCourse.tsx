@@ -9,7 +9,7 @@ import {
   FunnelIcon,
 } from "@heroicons/react/24/outline";
 import useScreenWidth from "../../hooks/useScreenWidth";
-import { ColorType, startMobileSize } from "@/_utiles/enums";
+import { ColorType, startMobileSize } from "@/utils/enums";
 import Filter from "./Filter";
 import MainButton from "../../buttons/MainButton";
 import FlexBetween from "../../flex/FlexBetween";

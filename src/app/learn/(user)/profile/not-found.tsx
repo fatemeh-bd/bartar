@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import Paragraph from "@/app/_components/typography/Paragraph";
 
 const notFound = () => {

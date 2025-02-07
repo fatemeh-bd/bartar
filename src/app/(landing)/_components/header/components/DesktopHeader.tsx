@@ -17,7 +17,7 @@ import { Counter } from './Counter';
 import Link from 'next/link';
 import { ProfileItemType } from '../types';
 import { useRouter } from 'next/navigation';
-import { ColorType, ProfileItem, Sizes } from '@/_utiles/enums';
+import { ColorType, ProfileItem, Sizes } from '@/utils/enums';
 import FlexItemCenter from '@/app/_components/flex/FlexItemCenter';
 import Paragraph from '@/app/_components/typography/Paragraph';
 import FlexBetween from '@/app/_components/flex/FlexBetween';

@@ -1,4 +1,4 @@
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import Paragraph from "@/app/_components/typography/Paragraph";
 import React from "react";
 

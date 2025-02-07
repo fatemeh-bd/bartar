@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
-import { scrollToTop } from '@/_utiles/helper';
+import { scrollToTop } from '@/utils/helper';
 import { ClockIcon, PhoneIcon } from '@heroicons/react/20/solid';
 import FooterItem from './FooterItem';
 import SocialMedias from './SocialMedias';

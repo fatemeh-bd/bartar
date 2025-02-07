@@ -1,5 +1,5 @@
 "use client";
-import { Sizes, startMobileSize } from "@/_utiles/enums";
+import { Sizes, startMobileSize } from "@/utils/enums";
 import useScreenWidth from "@/app/_components/hooks/useScreenWidth";
 import AllCourse from "@/app/_components/pages/courses/AllCourse";
 import Filter from "@/app/_components/pages/courses/Filter";

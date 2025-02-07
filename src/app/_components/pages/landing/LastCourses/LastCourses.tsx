@@ -4,7 +4,7 @@ import GradientBox from "../../../GradientBox";
 
 import { AcademicCapIcon } from "@heroicons/react/16/solid";
 
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import MainButton from "../../../buttons/MainButton";
 import FlexBetween from "../../../flex/FlexBetween";
 import CourseBox from "../../../courseBox/CourseBox";

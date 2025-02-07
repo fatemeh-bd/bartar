@@ -1,4 +1,4 @@
-import { SvgType } from "@/_utiles/enums";
+import { SvgType } from "@/utils/enums";
 
 export interface NavItemType {
   text: string;

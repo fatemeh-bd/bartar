@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FlexItemCenter from "../../flex/FlexItemCenter";
 import DropDown from "../../dropDown/DropDown";
 import { AdjustmentsHorizontalIcon } from "@heroicons/react/20/solid";
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import MainButton from "../../buttons/MainButton";
 import { FunnelIcon } from "@heroicons/react/24/outline";
 import CourseBox2 from "../../courseBox/CourseBox2";

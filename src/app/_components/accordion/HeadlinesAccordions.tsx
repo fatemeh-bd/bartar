@@ -2,8 +2,8 @@
 import { ChevronDownIcon, ClockIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Paragraph from "../typography/Paragraph";
-import { convertIndexToPersianWord } from "@/_utiles/helper";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { convertIndexToPersianWord } from "@/utils/helper";
+import { ColorType, Sizes } from "@/utils/enums";
 import FlexItemCenter from "../flex/FlexItemCenter";
 import FlexBetween from "../flex/FlexBetween";
 import MainButton from "../buttons/MainButton";

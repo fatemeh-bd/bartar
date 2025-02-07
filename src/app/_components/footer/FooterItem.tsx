@@ -1,7 +1,7 @@
 import React from "react";
 import FlexCenter from "../flex/FlexCenter";
 import Paragraph from "../typography/Paragraph";
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 
 const FooterItem = ({
   icon,

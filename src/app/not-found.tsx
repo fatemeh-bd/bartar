@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import Paragraph from "./_components/typography/Paragraph";
 import Header from "./_components/header/Header";
 import Footer from "./_components/footer/Footer";

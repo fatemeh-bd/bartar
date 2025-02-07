@@ -1,4 +1,4 @@
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import { ButtonHTMLAttributes } from "react";
 
 export type ButtonProps = Omit<

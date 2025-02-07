@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import FlexBetween from '../flex/FlexBetween';
 import Paragraph from '../typography/Paragraph';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import { NavItemType } from './types';
 
 const SubMenu = ({ data }: { data: NavItemType }) => {

@@ -4,7 +4,7 @@ import SectionTitle from "../../typography/SectionTitle";
 import FlexBetween from "../../flex/FlexBetween";
 import Paragraph from "../../typography/Paragraph";
 import Toman from "../../Toman";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 import LineSplitter from "../../LineSplitter";
 import MainButton from "../../buttons/MainButton";
 import Input from "../../inputs/Input";

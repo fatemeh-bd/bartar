@@ -15,7 +15,7 @@ import { Counter } from './Counter';
 import Link from 'next/link';
 import Paragraph from '../../typography/Paragraph';
 import { ProfileItemType } from '../types';
-import { ColorType, ProfileItem, Sizes } from '@/_utiles/enums';
+import { ColorType, ProfileItem, Sizes } from '@/utils/enums';
 
 const MobileHeader = () => {
   const [showProfileItem, setShowProfileItem] = useState<boolean>(false);

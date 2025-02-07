@@ -1,7 +1,7 @@
 import { ClockIcon, InformationCircleIcon, Squares2X2Icon, UserGroupIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import Paragraph from "../../../typography/Paragraph";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 const iconClass = "size-11 mx-auto text-primary bg-background rounded-full p-3";
 const items = [
   {

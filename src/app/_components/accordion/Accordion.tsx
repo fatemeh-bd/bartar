@@ -2,7 +2,7 @@ import React, { ReactNode, useState } from "react";
 import FlexItemCenter from "../flex/FlexItemCenter";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Paragraph from "../typography/Paragraph";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 
 const Accordion = ({
   title,

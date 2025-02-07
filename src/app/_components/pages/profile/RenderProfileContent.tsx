@@ -1,4 +1,4 @@
-import { ProfileItem } from "@/_utiles/enums";
+import { ProfileItem } from "@/utils/enums";
 import { notFound, useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 import Dashboard from "./dashboard/Dashboard";

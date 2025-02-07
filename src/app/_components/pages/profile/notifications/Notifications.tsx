@@ -1,4 +1,4 @@
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/utils/enums";
 import FlexItemCenter from "@/app/_components/flex/FlexItemCenter";
 import Paragraph from "@/app/_components/typography/Paragraph";
 import SectionTitle from "@/app/_components/typography/SectionTitle";

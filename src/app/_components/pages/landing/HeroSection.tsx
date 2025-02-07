@@ -3,7 +3,7 @@ import FlexItemCenter from '../../flex/FlexItemCenter';
 import MainButton from '../../buttons/MainButton';
 import Paragraph from '../../typography/Paragraph';
 import { TicketIcon } from '@heroicons/react/24/outline';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import Image from 'next/image';
 import GradientBox from '../../GradientBox';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorType } from '@/_utiles/enums';
+import { ColorType } from '@/utils/enums';
 import FlexCenter from '@/app/_components/flex/FlexCenter';
 import Paragraph from '@/app/_components/typography/Paragraph';
 

@@ -3,7 +3,7 @@ import React from "react";
 import Title from "../typography/Title";
 import FlexItemCenter from "../flex/FlexItemCenter";
 import Paragraph from "../typography/Paragraph";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 import Link from "next/link";
 import FlexBetween from "../flex/FlexBetween";
 import { ClockIcon } from "@heroicons/react/24/outline";

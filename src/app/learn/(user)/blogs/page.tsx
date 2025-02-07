@@ -1,5 +1,5 @@
 "use client";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 import Accordion from "@/app/_components/accordion/Accordion";
 import Radio from "@/app/_components/inputs/Radio";
 import BlogsList from "@/app/_components/pages/blogs/BlogsList";

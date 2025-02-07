@@ -1,6 +1,6 @@
 import React from "react";
 import { ButtonProps } from "./types";
-import { ColorType } from "@/_utiles/enums";
+import { ColorType } from "@/utils/enums";
 import { ArrowUpLeftIcon } from "@heroicons/react/20/solid";
 
 const MainButton: React.FC<ButtonProps> = ({

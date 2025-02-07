@@ -1,12 +1,12 @@
 'use client';
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import MainButton from '@/app/_components/buttons/MainButton';
 import Input from '@/app/_components/inputs/Input';
 import Label from '@/app/_components/inputs/Label';
 import SectionTitle from '@/app/_components/typography/SectionTitle';
 import Paragraph from '@/app/_components/typography/Paragraph';
 import { Dispatch, SetStateAction, useState } from 'react';
-// غلط کردم
+
 export default function ({
   setOtp,
 }: {

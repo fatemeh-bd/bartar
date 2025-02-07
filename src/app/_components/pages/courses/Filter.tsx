@@ -4,7 +4,7 @@ import React from "react";
 import Title from "../../typography/Title";
 import Input, { boxClass } from "../../inputs/Input";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { Sizes } from "@/_utiles/enums";
+import { Sizes } from "@/utils/enums";
 import { Squares2X2Icon, StarIcon } from "@heroicons/react/24/outline";
 import Accordion from "../../accordion/Accordion";
 import Switch from "../../switchButton/Switch";

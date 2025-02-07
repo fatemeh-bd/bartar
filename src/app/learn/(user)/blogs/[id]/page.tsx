@@ -1,4 +1,4 @@
-import { ColorType, Sizes } from '@/_utiles/enums';
+import { ColorType, Sizes } from '@/utils/enums';
 import Teacher from '@/app/_components/courseBox/Teacher';
 import GradientBox from '@/app/_components/GradientBox';
 import Paragraph from '@/app/_components/typography/Paragraph';

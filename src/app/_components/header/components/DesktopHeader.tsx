@@ -14,7 +14,7 @@ import {
   UserIcon,
 } from '@heroicons/react/24/outline';
 import Paragraph from '../../typography/Paragraph';
-import { ColorType, ProfileItem, Sizes } from '../../../../_utiles/enums';
+import { ColorType, ProfileItem, Sizes } from '../../../../utils/enums';
 import SubMenu from '../SubMenu';
 import { Logo } from './Logo';
 import { Counter } from './Counter';
