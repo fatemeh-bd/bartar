@@ -48,8 +48,20 @@ const MobileHeader = () => {
       icon: SparklesIcon,
       path: '/profile?page=' + ProfileItem.DASHBOARD,
     },
+    // {
+    //   text: 'دوره ها',
+    //   icon: AcademicCapIcon,
+    //   path: `/profile?page=${ProfileItem.COURSES}`,
+    // },
+  ];
+  const MenuItemList: ProfileItemType[] = [
     {
-      text: 'دوره ها',
+      text: 'میز لرن',
+      icon: SparklesIcon,
+      path: '/profile?page=' + ProfileItem.DASHBOARD,
+    },
+    {
+      text: 'میز شاپ',
       icon: AcademicCapIcon,
       path: `/profile?page=${ProfileItem.COURSES}`,
     },
@@ -92,7 +104,7 @@ const MobileHeader = () => {
         </div>
 
         <ul className="flex flex-col gap-2 p-4 relative [&>li>a]:!cursor-pointer rounded-xl max-h-[300px]">
-          {profileList?.map((item, index) => (
+          {MenuItemList?.map((item, index) => (
             <li key={index} className="border-b border-secondary-500 pb-2">
               <Link
                 href={item.path}

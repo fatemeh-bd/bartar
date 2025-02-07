@@ -2,7 +2,7 @@ import UserLayout from './layout';
 
 export default function page() {
   return (
-    <UserLayout>
+    <>
       <div className="flex justify-center items-center h-screen">
         <div className=" pt-[50%]">درحال پخت و پز</div>
         <br></br>
@@ -10,6 +10,6 @@ export default function page() {
           آموزش
         </a>
       </div>
-    </UserLayout>
+    </>
   );
 }
