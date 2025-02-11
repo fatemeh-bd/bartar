@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-export const BASE_URL = 'http://mizcode.com';
+export const BASE_URL = 'http://api.mizcode.com';
 
 const api = axios.create({
   baseURL: BASE_URL,
@@ -47,7 +47,7 @@ const checkAuth = (): boolean => {
 // api.interceptors.response.use(
 //   (response) => response,
 //   async (error: AxiosError) => {
-//     const originalRequest = error.config as any; 
+//     const originalRequest = error.config as any;
 //     if (error.response?.status === 401 && !originalRequest._retry) {
 //       originalRequest._retry = true; // جلوگیری از درخواست بی‌نهایت
 //       const newAccessToken = await refreshAccessToken();
@@ -58,14 +58,12 @@ const checkAuth = (): boolean => {
 //   }
 // );
 
-
 export const callApi = async (
   method: 'GET' | 'POST' | 'PUT' | 'DELETE',
   endpoint: string,
   body?: any,
   customHeaders?: Record<string, string>
 ) => {
-
   try {
     const response = await api({
       method,
