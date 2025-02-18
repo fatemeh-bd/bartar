@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 export const BASE_URL = 'http://api.mizcode.com';
 
+
 const api = axios.create({
   baseURL: BASE_URL,
   headers: {
